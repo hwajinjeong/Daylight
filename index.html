@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>Daylight</title>
+    <!--2. 연결 시켜야 할 파일을 연결 시킨다. 복사해서 head안에 본인 css파일 위에 위치 시킨다.-->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="daylight_main.css">
+		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header clearfix">
+    <ul class="header_menu1">
+        <li><a href="daylight_sub1.html">BRAND</a></li>
+        <li><a href="daylight_sub2.html">SHOP</a></li>
+    </ul>
+    <h1 class="header_menu2"><a href="index.html"><img src="images/0.Daylight_main/logo_menu.png" alt="상단메뉴로고"></a></h1>
+    <ul class="header_menu3">
+        <li><a href="daylight_sub3.html">GIFT CARD</a></li>
+        <li><a href="daylight_sub4.html">EVENT</a></li>
+    </ul>
+</div>
+    <!--1. 구조와 class의 이름을 알맞게 넣어준다.-->
+		<div class="swiper mb"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+			<div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+				<div class="swiper-slide">
+					<!--swiper-slide는 필수 클래스-->
+					<a href="daylight_sub2.html"><img src="images/0.Daylight_main/1.main_banner/1_banner1.jpg" alt="메인배너1"></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="daylight_sub2.html"><img src="images/0.Daylight_main/1.main_banner/1_banner2.jpg" alt="메인배너2"></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="daylight_sub2.html"><img src="images/0.Daylight_main/1.main_banner/1_banner3.jpg" alt="메인배너3"></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="daylight_sub2.html"><img src="images/0.Daylight_main/1.main_banner/1_banner4.jpg" alt="메인배너4"></a>
+				</div>
+			</div>
+			<!--화살표추가-->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<!--도트를 추가하고 싶을때-->
+			<div class="swiper-pagination"></div>
+		</div><!--mb E-->
+		
+		
+		
+		<!--3. 필수 옵션을 넣는 script부분을 body가장 끝에 넣어준다.-->
+		<!-- Initialize Swiper --><!--옵션부분 pdf파일 참조해주세요-->
+		<script>
+		  var swiper = new Swiper(".mb", {
+			navigation: {
+				 nextEl: ".swiper-button-next",
+				 prevEl: ".swiper-button-prev",
+				},//화살표를 작동하게 하는 옵션.
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+				},//도트부분을 작동하게 하는 옵션.
+			//옵션추가시 이걸 지우고 넣어주세요.
+		  });
+		</script>
+
+        <div class="wellcome">
+            <h1 class="text_title">어제보다 빛나는 당신의 하루를 함께</h1>
+			<div class="text">
+            <p>자신감이 가득한 미소는 그 어떤 화장품과 메이크업으로도 따라할 수 없는 아름다움입니다.</p>
+            <br>
+            <p>본연의 아름다움을 찾아가는 기쁨을 위해서,<br>
+                데이라이트는 그 과정 끝에 자신만의 빛을 찾을 수 있는 제품을 만들고 있습니다.</p>
+                <br>
+            <p>건강에서 오는 아름다움 만큼 아름다운게 있을까요?<br>
+                나만이 가진 진정한 아름다움을 함께 찾아가요.</p></div>
+        </div>
+		<div class="best"><img src="images/0.Daylight_main/2.best_product/2_best_product_title.png" alt="베스트제품타이틀">
+		<p class="best_text">고객님들께서 사랑해주신 이달의 베스트 상품입니다</p>
+		<ul class="clearfix">
+			<li class="best1"></li>
+			<li class="best2"></li>
+			<li class="best3"></li>
+		</ul>
+		</div>
+		<div class="deco_br"></div>
+		<div class="view_rank">
+			<p class="view_rank_title"><img src="images/0.Daylight_main/3.Review_Rank/view_rank_title.png" alt="뷰랭크타이틀"></p>
+			<p class="view_rank_text">고객님들께서 실시간으로 많이 찾아주시는 제품입니다</p>
+			<p class="view_rank_icon"><a href="#"><img src="images/0.Daylight_main/3.Review_Rank/look_icon.jpg" alt="자세히보기"></a></p>
+			<div class="clearfix">
+				
+
+	<!--탭 콘텐츠 영역 -->
+	<div class="tab_container">
+	    <div id="tab1" class="tab_content bg1">
+	    </div>
+	    <div id="tab2" class="tab_content bg2">
+		</div>
+		<div id="tab3" class="tab_content bg3">
+		</div>
+		<div id="tab4" class="tab_content bg4">
+		</div>
+		<div id="tab5" class="tab_content bg5">
+		</div>
+	</div>
+		<!--탭 메뉴 영역 -->
+		<ul class="tabs">
+			<li><a href="#tab1"><img src="images/0.Daylight_main/3.Review_Rank/view_rank1.png" alt="rank1"></a></li>
+			<li><a href="#tab2"><img src="images/0.Daylight_main/3.Review_Rank/view_rank2.png" alt="rank2"></a></li>
+			<li><a href="#tab3"><img src="images/0.Daylight_main/3.Review_Rank/view_rank3.png" alt="rank3"></a></li>
+			<li><a href="#tab4"><img src="images/0.Daylight_main/3.Review_Rank/view_rank4.png" alt="rank4"></a></li>
+			<li><a href="#tab5"><img src="images/0.Daylight_main/3.Review_Rank/view_rank5.png" alt="rank5"></a></li>
+		</ul>
+			</div>
+		</div>
+
+
+
+		<!--제이쿼리 라이브러리파일-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<!--탭 제이쿼리-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			//처음들어갔을때 모습 만들기...
+			$(".tab_content").hide(); //tab_content 부분을 모두 숨김.
+			$("ul.tabs li:first").addClass("active").show(); //첫번째 탭이 active클래스를 붙이고, 보여줌.
+			$(".tab_content:first").show(); //tab_contents중 첫번째꺼를 보여줌
+
+			//On Click Event
+			$("ul.tabs li").click(function() {
+
+				$("ul.tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //선택한 탭에만 active클래스 붙임
+				$(".tab_content").hide(); //모든 contents들 숨김
+
+				var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+				/*.attr( attributeName ) -> 선택한 요소의 속성의 값을 가져옵니다.
+				.find()는 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용합니다.*/
+				$(activeTab).fadeIn(); //Fade in the active ID content(active되어있는 칸의 id 값을 가진 부분이 나타남)
+				return false;
+			});
+
+		});
+	</script>
+
+	<div class="category">
+		<div class="category_box clearfix">
+			<div class="category_text_title"><img src="images/0.Daylight_main/4.Category/category_big_title_.png" alt="카테고리텍스트타이틀" class="category_title_imge">
+				<a href="daylight_sub2.html"><img src="images/0.Daylight_main/4.Category/look_at_icon.png" alt="자세히보기"></a></div>
+			<div class="category_1"></div>
+			<div class="category_2"></div>
+			<div class="category_3"></div>
+		</div>
+	</div>
+
+	<div class="event_box">
+		<div class="event_title"><img src="images/0.Daylight_main/5.event/envent_title-1.png" alt="이벤트타이틀"></div>
+		<P class="event_text_title">다양한 혜택을 확인해 보세요</P>
+		<div>
+			<a href="daylight_sub4.html"><img src="images/0.Daylight_main/5.event/event_banner1.jpg" alt="이벤트배너1"></a>
+			<a href="daylight_sub4.html"><img src="images/0.Daylight_main/5.event/event_banner2.jpg" alt="이벤트배너2"></a>
+		</div>
+	</div>
+	
+	
+		<div class="review_title"><img src="images/0.Daylight_main/6.best_review/best_riview_title.png" alt="베스트리뷰타이틀"></div>
+		<p class="review_text_title">이달의 고객님들의 상품후기 베스트입니다</p>
+		<div class="review">
+		<div class="swiper mb2"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+			<div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+				<div class="swiper-slide">
+					<!--swiper-slide는 필수 클래스-->
+					<img src="images/0.Daylight_main/6.best_review/review1.jpg" alt="베스트리뷰포토1">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/0.Daylight_main/6.best_review/review2.jpg" alt="베스트리뷰포토2">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/0.Daylight_main/6.best_review/review3.jpg" alt="베스트리뷰포토3">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/0.Daylight_main/6.best_review/review4.jpg" alt="베스트리뷰포토4">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/0.Daylight_main/6.best_review/review5.jpg" alt="베스트리뷰포토5">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/0.Daylight_main/6.best_review/review6.jpg" alt="베스트리뷰포토6">
+				</div>
+			</div>
+			
+			
+		</div><!--mb E-->
+		<!--화살표추가-->
+			<div class="swiper-button-next review_next"></div>
+			<div class="swiper-button-prev review_prev"></div>
+			<!--도트를 추가하고 싶을때-->
+		
+		
+		<!--3. 필수 옵션을 넣는 script부분을 body가장 끝에 넣어준다.-->
+		<!-- Initialize Swiper --><!--옵션부분 pdf파일 참조해주세요-->
+		<script>
+		  var swiper = new Swiper(".mb2", {
+			navigation: {
+				 nextEl: ".review_next",
+				 prevEl: ".review_prev",
+				},//화살표를 작동하게 하는 옵션.
+				slidesPerView: 4,
+		  });
+		</script>
+
+
+	</div>
+
+	<div class="notice">
+		<div class="notice_title"><img src="images/0.Daylight_main/7.notice/7_notice_title.png" alt="공지사항타이틀"></div>
+		<p class="notice_text">고객님들께서 실시간으로 많이 찾아주시는 제품입니다</p>
+		<div class="notice_box clearfix">
+			<div class="notice_box1">
+				<table>
+					<tr>
+						<th class="gongji">공지사항</th>
+						<td class="bogi"><a href="#">더보기></a></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="text1"><span class="call">1366-0881</span> <br>
+							고객센터 운영시간 [평일 09:00-18:00]</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="text2">[EVENT] 6월 REVIEW EVENT 안내</td>
+						<td>22.05.03</td>
+					</tr>
+					<tr>
+						<td class="text3">2022.06 신용카드 혜택 안내</td>
+						<td class="text4">22.05.03</td>
+					</tr>
+					<tr>
+						<td class="text5">[EVENT] 5월 REVIEW EVENT 안내</td>
+						<td class="text6">22.04.30</td>
+					</tr>
+				</table>
+			</div>
+			<div class="notice_box2">
+			<a href="daylight_sub4.html" class="notice_box3"><img src="images/0.Daylight_main/7.notice/7_notice_service_icon1.jpg" alt="1:1문의하기"></a>
+			<a href="daylight_sub4.html"><img src="images/0.Daylight_main/7.notice/7_notice_service_icon2.jpg" alt="자주하는질문"></a></div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="footer_inner">
+			<a href="daylight_main.html"><img src="images/Footer_logo.png" alt="로고이미지"></a>
+			<p class="footer_text1">회사명.한국&nbsp;데이라이트마케팅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표이사.정화진&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;주소.부산광역시&nbsp;연제구&nbsp;거제동&nbsp;&nbsp;조은빌딩</p>
+			<p class="footer_text2">대표번호.051-642-7942&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이메일.agnes611322@naver.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사업자등록번호</p>
+			<p class="footer_text3">Terms ot use&nbsp;&nbsp;&nbsp;l&nbsp;&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp;l&nbsp;&nbsp;&nbsp;Privacy Policy</p>
+			<p class="footer_text4">㈜2022 Daylight</p>
+		</div>
+
+	</div>
+
+</body>
+</html>

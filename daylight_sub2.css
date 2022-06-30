@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:18px;
+    line-height: 24px;
+    color:#ff6f60; 
+    min-width: 1450px;
+}
+ul{
+    list-style:none;    
+}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.header{
+    width: 1050px;
+    margin: auto;
+    position: relative;
+}
+.header li{
+    color: #ff6f60;
+    font-weight: bold;
+    font-size:20px;  
+    float: left;
+}
+.header_menu1{
+    float:left;
+    padding:30px 0;
+    text-align:center;
+}
+.header_menu3{
+    float:right;
+    padding:30px 0;
+    text-align:center;
+}
+.header_menu3 li{
+padding: 30px 43px;
+}
+.header_menu1 li{
+    padding: 30px 56px;
+}
+#header_inner{
+    width:1200px;
+    margin:0 auto;
+    position:relative;
+    /*logo포지션의 기준*/
+}
+.header_menu2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35px;
+}
+.header0{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/*------------------------------------*/
+.product{
+    margin: auto;
+    width: 1320px;
+}
+.product1 li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-bottom: 55px;
+}
+.product_title{
+    text-align: center;
+    padding-top: 160px;
+    padding-bottom: 55px;
+}
+
+.goods{
+    margin: auto;
+    width: 1320px;
+}
+.goods li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-bottom: 55px;
+}
+.goods_title{
+    text-align: center;
+    padding-top: 160px;
+    padding-bottom: 55px;
+}
+
+
+.best{
+    width: 1320px;
+    margin: auto;
+}
+.best_title{
+    text-align: center;
+    padding-top: 160px;
+    padding-bottom: 55px;
+}
+.best1{
+    background-image: url(images/2.sub_SHOP/2.best1.jpg);
+    width: 365px;
+    height: 365px;
+    float: left;
+}
+.best2{
+    margin: 0 112.5px;
+    background-image: url(images/2.sub_SHOP/2.best2.jpg);
+    width: 365px;
+    height: 365px;
+    float: left;
+}
+.best3{
+    background-image: url(images/2.sub_SHOP/2.best3.jpg);
+    width: 365px;
+    height: 365px;
+    float: left;
+}
+.best1:hover{
+    background-image: url(images/2.sub_SHOP/2.best_hover1.jpg);
+    transition: all 0.5s;
+}
+.best2:hover{
+    background-image: url(images/2.sub_SHOP/2.best_hover2.jpg);
+    transition: all 0.5s;
+}
+.best3:hover{
+    background-image: url(images/2.sub_SHOP/2.best_hover3.jpg);
+    transition: all 0.5s;
+}
+
+
+/*------footer------*/
+#footer{
+    background-color: #ffe6e2;
+    height: 506px;
+    margin-top: 392px;
+}
+.footer_inner{
+    width: 1320px;
+    margin: auto;
+    padding-top: 76px;
+    color: #525252;
+}
+.footer_text1{
+    padding-top: 76px;
+}
+.footer_text2{
+    padding-top: 30px;
+}
+.footer_text3{
+    padding-top: 60px;
+}
+.footer_text4{
+    padding-top: 60px;
+}
+
